@@ -8,6 +8,7 @@
 
 }
 
+/* Logo y navbar */
 :root{
     --bg-color: #12162B;
     --text-color: #fff;
@@ -51,38 +52,42 @@ header{
     width: 50px;
 
 }
+
 .navbar{
     display: flex;
     color: var(--main-color);
-    
-    /* background-color: #171d36; */
-    
-
-
 }
+
 .navbar a{
     color: var(--text-color);
     font-size: 1.1rem;
     font-weight: 500;
-    padding: 5px 0;
+    padding: -10px -10px;
     margin: 0px 30px;
     transition: all .50s ease;
 }
+
 .navbar a:hover{
-    background-color: var(--ho-color); 
+    background-color: var(--ho-color);
+    padding: 6px 10px;
+    border-radius: 5px; 
 
      
 }
+
 .navbar a.active{
-    /* background-color: #171d36; */
     color: var(--text-color);
+    padding: 6px 10px;
+    border-radius: 5px; 
     background-color: var(--ho-color);
 }
+
 .main{
     display: flex;
     align-items: center;
 
 }
+
 .main a {
     margin-right: 25px;
     margin-left: 10px;
@@ -91,20 +96,31 @@ header{
     font-weight: 500;
     transition: all .50s ease;
 }
+
 .user{
     display: flex;
     align-items: center;
     color: var(--bg-color);
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all .50s ease; 
     
 
 }
+
 .register{
     display: flex;
     align-items: center;
+    padding: 6px 10px;
+    border-radius: 5px; 
+    font-weight: 500;
+    transition: all .50s ease;
     /* color: var(--bg-color); */
 
 
 }
+
 .user i{
     color: var(--text-color );
     font-size: 28px;
@@ -112,10 +128,12 @@ header{
     
     
 }
+
 .main a:hover{
     color: var(--text-color);
     background-color: var(--ho-color);
 }
+
 #menu-icon{
     font-size: 35px;
     color: var(--text-color);
@@ -123,6 +141,9 @@ header{
     z-index: 10001;
     display: none;
 }
+
+/* Navbar responsiva */
+
 @media (max-width: 1280px){
     header{
         padding: 14px 2%;
@@ -159,15 +180,17 @@ header{
         margin: 12px 0;
         padding: 0px 25px;
         transition: all .50s ease;
-        /* background-color: #222b51; */
     }
+
     .navbar a:hover{
         color: var(--text-color);
         transform: translate(5px);
     }
+
     .navbar a.active{
         color:var(--text-color)
     }
+
     .navbar.open{
         
         padding-top: 2mm;
@@ -177,6 +200,93 @@ header{
 
     }
 }
+
+/* Footer */
+.container{
+    max-width: 1170px;
+    background-color: var(--bg-color);
+    margin: auto;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    background-color: var(--bg-color);
+    padding: 70px 0px;
+
+}
+.ul{
+    list-style: none;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-weight: 400;
+    position: relative;
+
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #8C0344;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 200;
+    color: #d3d3d3;
+    display: block;
+    transition: all .50s ease;
+}
+.footer-col ul li a:hover{
+    color: #a8386a;
+    padding-left: 5px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--ho-color);
+    margin-right:  0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius:50%;
+    color: var(--text-color);
+    transition: all .50s ease;
+}
+.footer-col .social-links a:hover{
+    color: #a8386a;
+    background-color: var(--text-color);
+}
+/* Footer responsivo */
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}
+
 
 
 /* body{
