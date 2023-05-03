@@ -1,3 +1,7 @@
+
+
+/* recordar subir el nuevo cambio de css*/
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +11,7 @@
   body{
     margin: 0;
     padding: 0;
-    background: #232323;
+    background: #222b51;
     height: 100vh;
     overflow: hidden;
   }
