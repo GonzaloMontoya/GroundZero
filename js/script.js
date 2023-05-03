@@ -55,8 +55,7 @@ function showSlides(){
     // Cambiar tiempo
 }*/
 // Slide automático cada 5 segundos
-setTimeout(function(){
+let timer = setInterval(function(){
     slideIndex++;
     showSlides(slideIndex);
-    setTimeout(arguments.callee, 5000);
-}, 5000);
+  }, 5000);

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+<!-- registro ingreso -->
+
+    <div class="center">
+        <h1>registro</h1>
+        
+        <form method="post">
+            <div class="txt_field">
+              <label>Nombre Usuario</label>
+              <input type="text" required minlength="10" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}"
+              title="solo letras"
+              autocomplete="off"
+              >
+            </div>
+      
+            <div class="txt_field">
+              <label >Correo electrónico</label>                                                                                                                                        
+              <input  type="email" required pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"                  
+              title="considera formato"
+              autocomplete="off"
+              /> 
+            </div>
+           
+      
+            
+      
+            <div class="txt_field">
+              <label for="userPassword">Contraseña</label>
+              <input type="password" required minlength="8" >         
+            </div>
+      
+      
+            <input type="submit" value="Iniciar Sesión">
+      
+            <div class="link_Ayuda">
+              Olvido Contraseña? <a href="#">Clic Aquí</a>
+            </div>
+      
+            <div class="link_Ayuda">
+              No Tiene Cuenta? <a href="#">Registrar</a>
+            </div>
+
+  
+</body>
+</html>
