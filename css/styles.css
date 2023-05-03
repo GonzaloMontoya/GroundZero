@@ -289,8 +289,16 @@ header{
 
 /* Carrusel */
 .mySlides{
-    display: none;
+    display: flex;
 }
+.P{
+    display: inline-table;
+    vertical-align: 600%;
+    padding-left: 20%;
+    text-align: center;
+    font-size: 25px;
+}
+
 
 .slideshow-container{
     padding-top: 1.5cm;
@@ -318,6 +326,7 @@ header{
     right: 0;
     border-radius: 3px 0 0 3px ;
 }
+
 .prev:hover, .next:hover{
     color: #a8386a
 }
