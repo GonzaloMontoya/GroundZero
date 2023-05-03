@@ -15,6 +15,7 @@
         <h1>registro</h1>
             <form method="post">
               <div class="txt_field">
+                <ion-icon name="person-outline"></ion-icon>
                 <label>Nombre Usuario</label>
                 <input type="text" required minlength="4" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}"
                 title="solo letras"
@@ -23,6 +24,7 @@
               </div>
         
               <div class="txt_field">
+                <ion-icon name="mail-outline"></ion-icon>
                 <label >Correo electrónico</label>                                                                                                                                        
                 <input  type="email" required pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"                  
                 title="considera formato"
@@ -34,11 +36,13 @@
               
         
               <div class="txt_field">
+                <ion-icon name="lock-closed-outline"></ion-icon>
                 <label for="userPassword">Contraseña</label>
                 <input type="password" id="userPassword" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$" title="Debe contener al menos 8 caracteres, incluyendo al menos una letra minúscula, una mayúscula y un número">
               </div>
       
               <div class="txt_field">
+                <ion-icon name="lock-closed-outline"></ion-icon>
                 <label for="confirmPassword">Confirm Contraseña</label>
                 <input type="password" id="confirmPassword" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$" title="no es igual">
               </div>
@@ -49,7 +53,10 @@
                 Olvido Contraseña? <a href="#">Clic Aquí</a>
               </div>
       </div>            
-<script type="text/javascript" src="js/script.js"></script>
-  
+      <script type="text/javascript" src="js/script.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      
 </body>
 </html>
