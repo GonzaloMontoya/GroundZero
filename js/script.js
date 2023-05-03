@@ -55,7 +55,20 @@ function showSlides(){
     // Cambiar tiempo
 }*/
 // Slide automático cada 5 segundos
-let timer = setInterval(function(){
+let timer = setInterval(function () {
     slideIndex++;
     showSlides(slideIndex);
   }, 5000);
+var password = document.getElementById("userPassword")
+        var confirmPassword = document.getElementById("confirmPassword");
+
+          function validatePassword() {
+            if (password.value !== confirmPassword.value) {
+              confirmPassword.setCustomValidity("Las contraseñas no coinciden");
+            } else {
+              confirmPassword.setCustomValidity('');
+            }
+          }
+
+          password.onchange = validatePassword;
+          confirmPassword.onkeyup = validatePassword;

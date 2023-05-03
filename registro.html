@@ -13,43 +13,42 @@
 
     <div class="center">
         <h1>registro</h1>
+            <form method="post">
+              <div class="txt_field">
+                <label>Nombre Usuario</label>
+                <input type="text" required minlength="4" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}"
+                title="solo letras"
+                autocomplete="off"
+                >
+              </div>
         
-        <form method="post">
-            <div class="txt_field">
-              <label>Nombre Usuario</label>
-              <input type="text" required minlength="10" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}"
-              title="solo letras"
-              autocomplete="off"
-              >
-            </div>
+              <div class="txt_field">
+                <label >Correo electrónico</label>                                                                                                                                        
+                <input  type="email" required pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"                  
+                title="considera formato"
+                autocomplete="off"
+                /> 
+              </div>
+             
+        
+              
+        
+              <div class="txt_field">
+                <label for="userPassword">Contraseña</label>
+                <input type="password" id="userPassword" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$" title="Debe contener al menos 8 caracteres, incluyendo al menos una letra minúscula, una mayúscula y un número">
+              </div>
       
-            <div class="txt_field">
-              <label >Correo electrónico</label>                                                                                                                                        
-              <input  type="email" required pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"                  
-              title="considera formato"
-              autocomplete="off"
-              /> 
-            </div>
-           
-      
-            
-      
-            <div class="txt_field">
-              <label for="userPassword">Contraseña</label>
-              <input type="password" required minlength="8" >         
-            </div>
-      
-      
-            <input type="submit" value="Iniciar Sesión">
-      
-            <div class="link_Ayuda">
-              Olvido Contraseña? <a href="#">Clic Aquí</a>
-            </div>
-      
-            <div class="link_Ayuda">
-              No Tiene Cuenta? <a href="#">Registrar</a>
-            </div>
-
+              <div class="txt_field">
+                <label for="confirmPassword">Confirm Contraseña</label>
+                <input type="password" id="confirmPassword" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$" title="no es igual">
+              </div>
+     
+              <input type="submit" value="registro">
+        
+              <div class="link_Ayuda">
+                Olvido Contraseña? <a href="#">Clic Aquí</a>
+              </div>
+              <script type="text/javascript" src="js/script.js"></script>
   
 </body>
 </html>
