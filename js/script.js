@@ -37,7 +37,7 @@ function showSlides(n){
 
 // Slide automático
 
-var slideIndex = 0;
+/*var slideIndex = 0;
 showSlides();
 
 function showSlides(){
@@ -53,4 +53,10 @@ function showSlides(){
     slides[slideIndex - 1 ].style.display = "block"
     setTimeout(showSlides, 100000);
     // Cambiar tiempo
-}
+}*/
+// Slide automático cada 5 segundos
+setTimeout(function(){
+    slideIndex++;
+    showSlides(slideIndex);
+    setTimeout(arguments.callee, 5000);
+}, 5000);
