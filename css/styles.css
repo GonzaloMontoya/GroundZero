@@ -14,6 +14,8 @@
     --text-color: #fff;
     --main-color:  #171d36;
     --ho-color: #222b50;
+    /*#8C0344;*/
+    /*#a8386a;*/
 
 }
 body{
@@ -45,8 +47,8 @@ header{
 .logo img{
     position: absolute;
     margin-top: 2cm;
-    margin-left: 1.5cm;
-    margin-right: 3cm;
+    margin-left: 2cm;
+    margin-right: 5cm;
     margin-bottom: 2cm;
     height: 50px;
     width: 50px;
@@ -195,7 +197,7 @@ header{
         
         padding-top: 2mm;
         right: 2%;
-        height: 170px;
+        height: 230px;
         background-color: var(--bg-color);
 
     }
@@ -356,5 +358,218 @@ header{
 @media only screen and (max-width:500px){
     .prev, .next, .text{
         font-size: 14px;
+    }
+}
+
+/* Productos */
+
+.small-container{
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 20px;
+    background-color: var(--main-color);
+
+
+}
+.roww{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.single-product{
+    margin-top: 80px;
+}
+.col-2 img{ 
+    max-width: 100%;
+    padding: 50px 0;
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    background-color: var();
+    padding-bottom: cm;
+}
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.single-product h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+} 
+.btn1{
+    display: inline-block;
+    background-color: var(--main-color);
+    color:var(--text-color);
+
+    padding: 8px 30px;
+    margin: .5cm 0 0 0 ;
+    border-radius: 30px;
+    transition: all .50 ease;
+    border: 1px solid var(--text-color);
+}
+.btn1:hover{
+    background: var(--text-color);
+    color: #a8386a;
+    transition: all .50 ease;
+}
+
+/*Artistas*/
+
+.containeer{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    max-width: 1500px;
+}
+.cuerpo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.card {
+    width: 100%;
+    margin: 8px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: var(--main-color);
+    box-shadow: 0px 1px 10px rgba(0, 0 , 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    height: 650px;
+    margin-bottom: 2cm;
+    margin-top: 4cm;
+}
+.card img{
+    width: 100%;
+    height: 210px;
+    justify-content: center;
+    text-align: center;
+
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+.card:hover{
+    transform: translateY(-2%);
+}
+.card .contenido p{
+    font-size: 13.5px;
+    line-height: 1.5;
+    padding-top: 3mm;
+    padding-bottom: 1mm; 
+    display: inline-block;
+    color: #d3d3d3;
+    /* padding-left: 5mm;
+    padding-right: 5mm; */
+}
+/* .card .contenido h3{
+    /* margin-top: 3mm;
+} */
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color:var(--text-color);
+    background-color: var(--ho-color);
+    width: 70px;
+    border-radius: 20px;
+    border: 1px solid var(--text-color);
+    transition: all 400ms ease;
+}
+.card .contenido a:hover{
+    color: #a8386a;
+    background-color: var(--text-color);
+    
+}
+
+
+/* Galería de obras */
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+
+}
+.container1 .heading{
+    width: 50%;
+    padding-bottom: 50px;
+
+}
+
+.container1 .heading h3{
+    font-size: 3em;
+    font-weight: 600;
+    color: black;
+    border-bottom: 3px solid #222;
+    padding-bottom: 10px;
+    margin-top: 5cm;
+}
+
+.container1 .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+.box{
+
+    justify-content: space-between;
+    text-align: center; 
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    align-items: center;
+    margin: 40px 20px 0 20px; 
+}
+.container1 .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.container1 .box .dream img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Galería responsiva*/ /*No sirve porque lo hice con otras cajas - Gm*/
+
+@media only screen and (max-width: 769px){
+    .container1 .box{
+        flex-direction: column;
+    }
+    .container1 .box .drean{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 643px){
+    .container1 .heading{
+        width: 100%;
+    }
+    .container1 .heading h3{
+        font-size: 1em;
     }
 }
