@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+</head>
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/GroundZero/css/from.css">
+<body>
+
+
+<!-- registro-->
+  <div class="contenedor-formulario contenedor">
+      <div class="imagen-formulario">
+        
+      </div>
+       
+          
+        <form class="formulario" id="formularioai">
+              <div class="textoformulario">
+                  <h2>registro</h2>
+                  <p>registro de nueva cuenta</p>
+                  
+              </div>
+            
+              <div class="txt_field">
+                <ion-icon name="person-outline"></ion-icon>
+                <label>Nombre Usuario</label>
+                <input placeholder="Ingresa tu nombre"type="text" id="usuario"  required minlength="4" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}"
+                title="solo letras"
+                autocomplete="off"
+                >
+              </div>
+
+              <div class="txt_field">
+                <ion-icon name="mail-outline"></ion-icon>
+                <label >Correo electrónico</label>                                                                                                                                        
+                <input  placeholder="Ingresa tu correo" type="email" id="correo" required pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"                  
+                title="considera formato"
+                autocomplete="off"
+                > 
+              </div>
+              <div class="txt_field">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <label for="password">Contraseña</label>
+                <input placeholder="Ingresa tu contraseña" type="password" id="password" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$" title="Debe contener al menos 8 caracteres, incluyendo al menos una letra minúscula, una mayúscula y un número">
+              </div>
+              <div class="txt_field">
+                <input type="submit" value="registro">
+              </div>
+              <div id="message" class=""></div>  
+         </form>       
+  </div>    
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/GroundZero/js/validationregistro.js"></script>
+
+    
+</body>
+</html>
